@@ -1,0 +1,19 @@
+@media(max-width: 768px) {
+    .duvidas {
+        padding: 30px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .informacoes {
+        margin-top: 50px;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .informacoes .titulo {
+        font-size: 1.7rem;
+        margin-bottom: 10px;
+    }
+}

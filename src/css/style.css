@@ -1,0 +1,115 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    background: url(../images/bg-repeat.jpg) repeat-x;
+    background-size: contain;
+    height: 100vh;
+}
+
+.duvidas {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 12px 50px;
+}
+
+.informacoes {
+    color: #FFFFFF;
+    margin-right: 73px;
+    max-width: 300px;
+}
+
+.informacoes .titulo {
+    font-weight: 900;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.informacoes .texto {
+    font-size: 1.5rem;
+}
+
+.formulario-duvidas {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.formulario-duvidas p {
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+}
+
+.formulario-duvidas .botao {
+    padding: 12px;
+    background-color: #3CCC87;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.formulario-duvidas .botao:hover {
+    background-color: #2c9261;
+}
+
+.formulario-duvidas .dados-formulario {
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.dados-formulario.mensagem {
+    height: 100px;
+    margin-bottom: 7px;
+}
+
+.formulario-duvidas .obrigatorio {
+    display: none;
+}
+
+.invalido .dados-formulario {
+    border: 1px solid #F52E2E;
+    margin-bottom: 0;
+    animation: shake 300ms;
+}
+
+.invalido .obrigatorio  {
+    display: block;
+    color: #F52E2E;
+    margin-bottom: 15px;
+}
+
+.validado .dados-formulario {
+    border: 1px solid #00C22B;
+}
+
+@keyframes shake {
+    25% {
+        transform: translateX(-4px);
+    }
+
+    50% {
+        transform: translateX(4px);
+    }
+
+    75% {
+        transform: translateX(-4px);
+    }
+}
+
+
+

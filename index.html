@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quest HTML + CSS + JS</title>
+
+        <link rel="stylesheet" href="./src/css/reset.css">
+        <link rel="stylesheet" href="./src/css/style.css">
+        <link rel="stylesheet" href="./src/css/responsive.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <main>
+            <section class="duvidas">
+                <div class="informacoes">
+                    <h1 class="titulo">Ficou com dúvida? <br> nos mande uma mensagem!</h1>
+
+                    <p class="texto">caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
+                </div>
+
+                <form class="formulario-duvidas">
+
+                    <label class="campo-obrigatorio">
+                        <input type="text" name="nome" class="dados-formulario" placeholder="Nome Completo *">
+                        <span class="obrigatorio">campo obrigatório</span>
+                    </label>
+
+                    <label class="campo-obrigatorio">
+                        <input type="email" name="email" class="dados-formulario" placeholder="Email *">
+                        <span class="obrigatorio">campo obrigatório</span>
+                    </label>
+
+                    <label class="campo-obrigatorio">
+                        <input type="number" name="celular" class="dados-formulario" placeholder="Telefone *">
+                        <span class="obrigatorio">campo obrigatório</span>
+                    </label>
+
+
+                    <label class="campo-obrigatorio">
+                        <textarea name="mensagem" cols="30" rows="10" placeholder="Mensagem *" class="dados-formulario mensagem"></textarea>
+                        <span class="obrigatorio">campo obrigatório</span>
+                    </label>
+
+                    <p>*campos obrigatórios</p>
+
+                    <input type="submit" value="Enviar" class="botao" id="botao-enviar">
+                </form>
+            </section>
+        </main>
+
+        <script src="./src/js/index.js"></script>
+    </body>
+</html>
